@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+.container{
+    max-width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to left, #33ccff 0%, #ff99cc 100%)
+    
+}
+.form-container{
+    max-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-input-details,
+.board-container{
+    background-color: white;
+    width: 50%;
+    height: 70vh;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2)
+
+}
+.form-input-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-heading{
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.input-boxes{
+    margin-top: 30px;
+    width: 60%;
+}
+.input-group{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    margin: 10px 0px;
+    position: relative;
+}
+.input-group input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 0 30px;
+    font-size: 15px;
+    font-weight: 500;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2)
+}
+.input-group input:focus{
+    border-color: #ff99cc;
+}
+.input-group i{
+    position: absolute;
+    font-size:17px ;
+    font-weight: 500;
+    color: #ff99cc;
+}
+.button{
+    margin-top: 40px;
+}
+.button input{
+    background: #ff99cc;
+    color: white;
+    border-radius: 5px;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.4s ease;
+
+}
+.button input:hover{
+    background:linear-gradient(to left, #33ccff 0%, #ff99cc 100%) ;
+}
+.board-container{
+    display: none;
+}
+.board{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.player1 ,
+.player2{
+    width: 50%;
+    height: 100%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.player1{
+    background:cornsilk ;
+}
+.player2{
+    background:rgb(136, 224, 183);
+}
+.heading{
+    font-size: 6vh;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    text-align: center;
+}
+.score{
+    color: #ff99cc;
+    font-size: 10vh;
+
+}
+.dice{
+    width: 50%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.dice img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+#player-1-button ,
+#player-2-button {
+    width: 50%;
+}
+#player-1-button input[disabled],
+#player-2-button input[disabled]{
+    background: white;
+    color: black;
+    cursor: not-allowed;
+}
+.winner ,.winner1{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: rgb(238, 226, 226);
+    opacity: 0.8;
+    background: url(/image/victory.gif);
+    z-index: 100;
+}
+.new-button,.reset{
+    padding-top: 3px;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    background: linear-gradient(to left, #33ccff 0%, #ff99cc 100%) ;
+   
+}
+.new-button input,.reset input{
+    background: linear-gradient(to left, #33ccff 0%, #ff99cc 100%) ;
+    font-weight: 400;
+    color: white;
+    border-radius: 5px;
+    padding: 4px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
