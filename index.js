@@ -32,7 +32,7 @@ function rollDice(playerIndex)
 {
     const randomNumber=getRandom();
     const playerNodes=document.getElementById(`player${playerIndex}`);
-    playerNodes.querySelector(".dice img").setAttribute("src",`/image/dice${randomNumber}.PNG`);
+    playerNodes.querySelector(".dice img").setAttribute("src",`dice${randomNumber}.PNG`);
     switch(playerIndex)
     {
         case 1:
@@ -88,10 +88,10 @@ function resetGame()
     firstPlayerScore=0;
     secondPlayerscore=0;
     const player1=document.getElementById(`player${1}`);
-    player1.querySelector(".dice img").setAttribute("src",`/image/dice${1}.PNG`);
+    player1.querySelector(".dice img").setAttribute("src",`dice${1}.PNG`);
     player1.getElementsByClassName("score")[0].innerHTML=firstPlayerScore;
     const player2=document.getElementById(`player${2}`);
-    player2.querySelector(".dice img").setAttribute("src",`/image/dice${1}.PNG`);
+    player2.querySelector(".dice img").setAttribute("src",`dice${1}.PNG`);
     player2.getElementsByClassName("score")[0].innerHTML=firstPlayerScore;
     
     winner1=document.querySelector(".winner");

@@ -152,7 +152,7 @@
     height: 100%;
     background: rgb(238, 226, 226);
     opacity: 0.8;
-    background: url(/image/victory.gif);
+    background: url(victory.gif);
     z-index: 100;
 }
 .new-button,.reset{
