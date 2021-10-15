@@ -160,11 +160,11 @@
     width: 100%;
     height: 40px;
     text-align: center;
-    background: linear-gradient(to left, #33ccff 0%, #ff99cc 100%) ;
+    background:linear-gradient(to left, #33ccff 0%, #ff99cc 100%) ;
    
 }
 .new-button input,.reset input{
-    background: linear-gradient(to left, #33ccff 0%, #ff99cc 100%) ;
+    background: #ff99cc;
     font-weight: 400;
     color: white;
     border-radius: 5px;
@@ -172,4 +172,10 @@
     font-size: 20px;
     cursor: pointer;
     transition: all 0.4s ease;
+}
+.reset input:hover{
+    background:linear-gradient(to left, #33ccff 0%, #ff99cc 100%) ;
+}
+.new-button input:hover{
+    background:linear-gradient(to left, #33ccff 0%, #ff99cc 100%) ;
 }
